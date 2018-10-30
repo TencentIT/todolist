@@ -1,0 +1,10 @@
+<ul>
+
+
+    <!-- <li *ngFor="let tmp of content">{{tmp}}</li> -->
+
+    <app-to-do-item [myValue]="tmp" (deleteEvent)="handleDeleteEvent(myIndex)" *ngFor="let tmp of content;let myIndex =index">
+
+    </app-to-do-item>
+
+</ul>
